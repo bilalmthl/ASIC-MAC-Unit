@@ -1,14 +1,34 @@
+# ASAP7 setup for ASIC MAC project
+
 setenv PROJ_ROOT $HOME/asic_mac_project
+
 setenv ASAP7_ROOT $PROJ_ROOT/pdks/asap7
 setenv ASAP7_PDK $ASAP7_ROOT/asap7_pdk_r1p7
 setenv ASAP7_SC $ASAP7_ROOT/asap7sc7p5t_28
 
-setenv ASAP7_LIB $PROJ_ROOT/pdks/asap7_unzipped_libs/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.lib
+setenv ASAP7_LIB_DIR $PROJ_ROOT/pdks/asap7_unzipped_libs
+
+setenv ASAP7_INVBUF_LIB $ASAP7_LIB_DIR/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.lib
+setenv ASAP7_SIMPLE_LIB $ASAP7_LIB_DIR/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.lib
+setenv ASAP7_SEQ_LIB $ASAP7_LIB_DIR/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.lib
+setenv ASAP7_AO_LIB $ASAP7_LIB_DIR/asap7sc7p5t_AO_RVT_TT_nldm_211120.lib
+setenv ASAP7_OA_LIB $ASAP7_LIB_DIR/asap7sc7p5t_OA_RVT_TT_nldm_211120.lib
+
+setenv ASAP7_LIBS "$ASAP7_INVBUF_LIB $ASAP7_SIMPLE_LIB $ASAP7_SEQ_LIB $ASAP7_AO_LIB $ASAP7_OA_LIB"
+
 setenv ASAP7_TECH_LEF $ASAP7_SC/techlef_misc/asap7_tech_1x_201209.lef
 setenv ASAP7_CELL_LEF $ASAP7_SC/LEF/asap7sc7p5t_28_R_1x_220121a.lef
 setenv ASAP7_CELL_VERILOG $ASAP7_SC/Verilog/asap7sc7p5t_SIMPLE_RVT_TT_201020.v
 
-echo "ASAP7_LIB = $ASAP7_LIB"
-echo "ASAP7_TECH_LEF = $ASAP7_TECH_LEF"
-echo "ASAP7_CELL_LEF = $ASAP7_CELL_LEF"
+echo "PROJ_ROOT          = $PROJ_ROOT"
+echo "ASAP7_ROOT         = $ASAP7_ROOT"
+echo "ASAP7_SC           = $ASAP7_SC"
+echo "ASAP7_LIB_DIR      = $ASAP7_LIB_DIR"
+echo "ASAP7_INVBUF_LIB   = $ASAP7_INVBUF_LIB"
+echo "ASAP7_SIMPLE_LIB   = $ASAP7_SIMPLE_LIB"
+echo "ASAP7_SEQ_LIB      = $ASAP7_SEQ_LIB"
+echo "ASAP7_AO_LIB       = $ASAP7_AO_LIB"
+echo "ASAP7_OA_LIB       = $ASAP7_OA_LIB"
+echo "ASAP7_TECH_LEF     = $ASAP7_TECH_LEF"
+echo "ASAP7_CELL_LEF     = $ASAP7_CELL_LEF"
 echo "ASAP7_CELL_VERILOG = $ASAP7_CELL_VERILOG"
