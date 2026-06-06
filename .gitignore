@@ -26,6 +26,11 @@ pdks/
 *.cmd*
 *.log*
 *.logv
+.bpad/
+xcelium_error_demo/
+*.err
+xmsim_*.err
+bpad_*.err
 
 # Project output folders
 logs/
