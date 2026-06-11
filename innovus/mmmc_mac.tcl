@@ -13,7 +13,7 @@ create_delay_corner -name dc_tt \
     -rc_corner rc_typical
 
 create_constraint_mode -name cm_func \
-    -sdc_files [list $PROJ_ROOT/results/sweep_500ps/mac_mapped.sdc]
+    -sdc_files [list $PROJ_ROOT/results/sweep_610ps/mac_mapped.sdc]
 
 create_analysis_view -name av_setup \
     -constraint_mode cm_func \
