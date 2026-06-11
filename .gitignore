@@ -32,6 +32,8 @@ xcelium_error_demo/
 xmsim_*.err
 bpad_*.err
 .cadence/
+echo ".rs_*.tstamp" >> .gitignore
+echo "timingReports/" >> .gitignore
 
 # Project output folders
 logs/
