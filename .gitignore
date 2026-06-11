@@ -32,6 +32,8 @@ xcelium_error_demo/
 xmsim_*.err
 bpad_*.err
 .cadence/
+.rs_*.tstamp
+timingReports/
 
 # Project output folders
 logs/
