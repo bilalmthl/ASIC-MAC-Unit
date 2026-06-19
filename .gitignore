@@ -40,6 +40,7 @@ logs/
 reports/
 results/
 work/
+mac_gds_view/
 
 # Tool run folders
 INCA_libs/
