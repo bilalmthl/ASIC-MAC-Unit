@@ -1,4 +1,6 @@
-# Innovus init script for synthesized MAC
+# Early baseline placement script.
+# Kept for reference only.
+# Final baseline flow uses init_mac_opt.tcl.
 
 set PROJ_ROOT $env(PROJ_ROOT)
 

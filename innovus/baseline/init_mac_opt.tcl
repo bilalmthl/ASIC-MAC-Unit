@@ -1,4 +1,5 @@
-# Innovus init script for synthesized MAC
+# Optimized baseline Innovus init script.
+# This is the placement/pre-CTS optimization script used for the final baseline flow.
 
 set PROJ_ROOT $env(PROJ_ROOT)
 
@@ -11,7 +12,7 @@ set init_lef_file [list \
     $env(ASAP7_CELL_LEF) \
 ]
 
-set init_mmmc_file $PROJ_ROOT/innovus/mmmc_mac.tcl
+set init_mmmc_file $PROJ_ROOT/innovus/baseline/mmmc_mac.tcl
 
 set init_pwr_net VDD
 set init_gnd_net VSS

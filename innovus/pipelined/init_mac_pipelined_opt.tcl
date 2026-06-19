@@ -11,7 +11,7 @@ set init_lef_file [list \
     $env(ASAP7_CELL_LEF) \
 ]
 
-set init_mmmc_file $PROJ_ROOT/innovus/mmmc_mac_pipelined.tcl
+set init_mmmc_file $PROJ_ROOT/innovus/pipelined/mmmc_mac_pipelined.tcl
 
 set init_pwr_net VDD
 set init_gnd_net VSS
